@@ -8,7 +8,7 @@ public class Korean {
     public Korean() {
         this("신사임당", "901022-2754312");
     }
-
+    // this() 생성자 호출
     public Korean(String name, String ssn) {
         this.nation = "대한민국";
         this.name = name;

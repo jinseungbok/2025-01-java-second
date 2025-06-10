@@ -21,6 +21,6 @@ public class Mission02Method {
 /*
 String fileName = "가나다라.haha.jpeg";
 int lastDotIdx = fileName.lastIndexOf(".");
-String ext = fileName.substring(lastDotIdx + 1); // 확장자 추출!
+String ext = fileName.substring(lastDotIdx + 1);
         System.out.println("ext: " + ext);
  */
