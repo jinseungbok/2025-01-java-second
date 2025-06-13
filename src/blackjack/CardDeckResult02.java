@@ -4,6 +4,7 @@ package blackjack;
 public class CardDeckResult02 {
     private String[] patterns = {"Spade", "Heart", "Diamond", "Clover"};
     private Card[] cards = new Card[52];
+    private int selectedIdx = 0;
 
     public CardDeckResult02() {
         int index = 0;
@@ -23,13 +24,26 @@ public class CardDeckResult02 {
     }
 
     private void shuffle() {
-        for (int i=0; i<cards.length; i++) {
-            int rIdx = (int)(Math.random() * cards.length);
+        for (int i = 0; i < cards.length; i++) {
+            int rIdx = (int) (Math.random() * cards.length);
             Card temp = cards[rIdx];
             cards[rIdx] = cards[i];
             cards[i] = temp;
         }
     }
+
+    public Card getCard() {
+        if(selectedIdx == cards.length) {
+            return null;
+        }
+            Card c = cards[selectedIdx];
+            cards[selectedIdx++] = null;
+            return c;
+        }
+    //  if (selectedIdx < cards.length) {
+    //      return cards[selectedIdx++];
+    //  }
+    //  return null;
 
     public void printAllCards() {
         for (Card card : cards) {

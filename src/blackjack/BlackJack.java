@@ -3,8 +3,15 @@ package blackjack;
 public class BlackJack {
     public static void main(String[] args) {
         CardDeckResult02 cd = new CardDeckResult02();
-        cd.printAllCards();
+    //  cd.printAllCards();
+        Card c = cd.getCard();
+        System.out.println(c);
+        System.out.println(cd.getCard());
 
+        System.out.println("----------");
+        cd.printAllCards();
+    }
+}
 //      Object obj = cd;
 //      obj = 1;
 //
@@ -14,5 +21,3 @@ public class BlackJack {
 //      String str = "안녕";
 //      System.out.println(str);
 //      System.out.println(str.toString());
-    }
-}
