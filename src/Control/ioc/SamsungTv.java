@@ -1,0 +1,18 @@
+package Control.ioc;
+
+import Control.Speaker;
+import Control.Tv;
+public class SamsungTv implements Tv {
+    private Speaker speaker;
+
+    public SamsungTv(Speaker speaker) {
+        this.speaker = speaker;
+    }
+
+    @Override
+    public void sound() {
+        System.out.println("SamsungTv의 소리는요.");
+        this.speaker.speakerSound();
+        }
+    }
+

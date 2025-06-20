@@ -11,8 +11,9 @@ public class Test {
         Speaker speaker2 = new JBLSpeaker();
         speaker2.speakerSound();
 
-        System.out.println("=======");
+        System.out.println("-------");
         Tv tv = new SamsungTv();
         tv.sound();
+
     }
 }
